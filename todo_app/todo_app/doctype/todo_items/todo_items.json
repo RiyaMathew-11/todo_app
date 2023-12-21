@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-21 13:30:57.402114",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "route_details_section",
+  "route",
+  "is_published",
+  "basic_details_section",
+  "todo_name",
+  "todo_description",
+  "todo_notes",
+  "column_break_xcon",
+  "due_date",
+  "due_time",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "todo_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ToDo Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "todo_description",
+   "fieldtype": "Small Text",
+   "label": "ToDo Description"
+  },
+  {
+   "fieldname": "todo_notes",
+   "fieldtype": "Text Editor",
+   "label": "Todo Notes"
+  },
+  {
+   "fieldname": "column_break_xcon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "due_time",
+   "fieldtype": "Time",
+   "label": "Due Time"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "To-Do\nIn Progress\nDone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route_details_section",
+   "fieldtype": "Section Break",
+   "label": "Route Details"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2023-12-21 13:38:26.132854",
+ "modified_by": "Administrator",
+ "module": "Todo App",
+ "name": "ToDo Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "todo",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
